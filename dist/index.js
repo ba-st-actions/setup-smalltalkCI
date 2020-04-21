@@ -959,7 +959,7 @@ const exec = __webpack_require__(986)
 const io = __webpack_require__(1)
 const tc = __webpack_require__(533)
 
-const SCI_BRANCH = '452-Coveralls-integration-is-not-working-when-using-GitHub-actions-to-trigger-the-build'
+const SCI_BRANCH = 'v10.0.0'
 const INSTALLATION_DIRECTORY = path.join(os.homedir(), '.smalltalkCI')
 const DEFAULT_64BIT_DEPS = 'libpulse0'
 const DEFAULT_32BIT_DEPS = 'libc6-i386 libuuid1:i386 libssl1.0.0:i386'
