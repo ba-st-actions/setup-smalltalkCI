@@ -6,7 +6,7 @@ const exec = require('@actions/exec')
 const io = require('@actions/io')
 const tc = require('@actions/tool-cache')
 
-const SCI_BRANCH = '11.2.0'
+const SCI_BRANCH = '11.3.0'
 const INSTALLATION_DIRECTORY = path.join(os.homedir(), '.smalltalkCI')
 const DEFAULT_64BIT_DEPS = 'libpulse0'
 const DEFAULT_32BIT_DEPS = 'libc6-i386 libuuid1:i386 libssl1.0.0:i386'
