@@ -959,7 +959,7 @@ const exec = __webpack_require__(986)
 const io = __webpack_require__(1)
 const tc = __webpack_require__(533)
 
-const SCI_BRANCH = 'v10.0.0'
+const SCI_BRANCH = '10.0.0'
 const INSTALLATION_DIRECTORY = path.join(os.homedir(), '.smalltalkCI')
 const DEFAULT_64BIT_DEPS = 'libpulse0'
 const DEFAULT_32BIT_DEPS = 'libc6-i386 libuuid1:i386 libssl1.0.0:i386'
@@ -1003,7 +1003,7 @@ async function run() {
 
     /* Set up smalltalkci command. */
     core.addPath(path.join(INSTALLATION_DIRECTORY, 'bin'))
-  } 
+  }
   catch (error) {
     core.setFailed(error.message)
   }
@@ -4523,7 +4523,7 @@ function bytesToUuid(buf, offset) {
   var i = offset || 0;
   var bth = byteToHex;
   // join used to fix memory issue caused by concatenation: https://bugs.chromium.org/p/v8/issues/detail?id=3175#c4
-  return ([bth[buf[i++]], bth[buf[i++]], 
+  return ([bth[buf[i++]], bth[buf[i++]],
 	bth[buf[i++]], bth[buf[i++]], '-',
 	bth[buf[i++]], bth[buf[i++]], '-',
 	bth[buf[i++]], bth[buf[i++]], '-',
