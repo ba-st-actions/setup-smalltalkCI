@@ -1,6 +1,6 @@
 {
   "name": "setup-smalltalkCI",
-  "version": "10.0.1",
+  "version": "11.0.1",
   "description": "This GitHub Action sets up smalltalkCI for testing Smalltalk projects.",
   "main": "index.js",
   "scripts": {
