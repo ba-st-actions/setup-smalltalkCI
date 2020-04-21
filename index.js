@@ -6,7 +6,7 @@ const exec = require('@actions/exec')
 const io = require('@actions/io')
 const tc = require('@actions/tool-cache')
 
-const SCI_BRANCH = '452-Coveralls-integration-is-not-working-when-using-GitHub-actions-to-trigger-the-build'
+const SCI_BRANCH = 'v10.0.0'
 const INSTALLATION_DIRECTORY = path.join(os.homedir(), '.smalltalkCI')
 const DEFAULT_64BIT_DEPS = 'libpulse0'
 const DEFAULT_32BIT_DEPS = 'libc6-i386 libuuid1:i386 libssl1.0.0:i386'
@@ -50,7 +50,7 @@ async function run() {
 
     /* Set up smalltalkci command. */
     core.addPath(path.join(INSTALLATION_DIRECTORY, 'bin'))
-  } 
+  }
   catch (error) {
     core.setFailed(error.message)
   }

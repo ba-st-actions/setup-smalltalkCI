@@ -1,6 +1,6 @@
 {
   "name": "setup-smalltalkCI",
-  "version": "1.0.0",
+  "version": "10.0.0",
   "description": "This GitHub Action sets up smalltalkCI for testing Smalltalk projects.",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hpi-swa/setup-smalltalkCI.git"
+    "url": "git+https://github.com/ba-st-actions/setup-smalltalkCI.git"
   },
   "keywords": [
     "smalltalkCI",
