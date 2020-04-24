@@ -1,6 +1,6 @@
 # setup-smalltalkCI
 
-This GitHub Action sets up [smalltalkCI] for testing Smalltalk projects.
+This GitHub Action sets up [smalltalkCI] for testing Smalltalk projects. It's using ba-st fork waiting for some changes in the upstream project.
 
 ## Usage
 
@@ -9,7 +9,7 @@ This GitHub Action sets up [smalltalkCI] for testing Smalltalk projects.
 ```yaml
 steps:
   - uses: actions/checkout@v2
-  - uses: hpi-swa/setup-smalltalkCI@v1
+  - uses: ba-st-actions/setup-smalltalkCI@v1
     id: smalltalkci
     with:
       smalltalk-version: 'Squeak64-trunk'
@@ -28,7 +28,7 @@ jobs:
     name: ${{ matrix.smalltalk }}
     steps:
       - uses: actions/checkout@v2
-      - uses: hpi-swa/setup-smalltalkCI@v1
+      - uses: ba-st-actions/setup-smalltalkCI@v1
         with:
           smalltalk-version: ${{ matrix.smalltalk }}
       - run: smalltalkci -s ${{ matrix.smalltalk }}
