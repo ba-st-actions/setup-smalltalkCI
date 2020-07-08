@@ -6,7 +6,7 @@ const exec = require('@actions/exec')
 const io = require('@actions/io')
 const tc = require('@actions/tool-cache')
 
-const SCI_REPO_URL = 'https://github.com/ba-st/smalltalkCI'
+const SCI_REPO_URL = 'https://github.com/ba-st-dependencies/smalltalkCI'
 const SCI_BRANCH = '2.9.4'
 const INSTALLATION_DIRECTORY = path.join(os.homedir(), '.smalltalkCI')
 const DEFAULT_64BIT_DEPS = 'libpulse0'
